@@ -1,0 +1,258 @@
+body {
+  background-color: #1a1a1a;
+  margin: 0;
+  padding: 40px 16px 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #e8e8e8;
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='24' viewBox='0 0 16 24'%3E%3Cpath d='M0 0 L0 16 L4 11 L7 18 L9 17 L6 10 L11 10 Z' fill='%23cc2222'/%3E%3C/svg%3E") 0 0, auto;
+}
+
+.page {
+  background: #2d2d2d;
+  width: 38%;
+  min-width: 340px;
+  margin: 0 auto;
+  padding: 32px 48px 48px;
+}
+
+a {
+  color: #aac4e0;
+}
+
+a:visited {
+  color: #9ab4d0;
+}
+
+h1, h2, h3 {
+  color: #f0f0f0;
+}
+
+.subtitle, .byline, footer p {
+  color: #999;
+}
+
+.byline {
+  font-size: 0.9em;
+}
+
+footer p {
+  font-size: 0.85em;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 24px 0;
+}
+
+/* Home page specific */
+.home-header {
+  text-align: center;
+  padding-top: 16px;
+}
+
+.home-header h1 {
+  font-size: 2em;
+  margin-bottom: 8px;
+}
+
+.home-header .subtitle {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.info-box {
+  background: #252525;
+  border-left: 3px solid #555;
+  padding: 16px 20px;
+  margin: 24px 0;
+  color: #ccc;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+.section-label {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #777;
+  margin-bottom: 8px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.earth-link {
+  flex-shrink: 0;
+}
+
+.earth-link img {
+  width: 44px;
+  height: 44px;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+  display: block;
+}
+
+.earth-link img:hover {
+  opacity: 1;
+}
+
+.topbar-nav {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.page {
+  position: relative;
+}
+
+.topbar-nav a {
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.topbar-nav a:hover {
+  color: #e8e8e8;
+}
+
+/* Blog post specific */
+blockquote {
+  border-left: 3px solid #555;
+  margin: 24px 0 24px 0;
+  padding: 4px 20px;
+  color: #bbb;
+  font-style: italic;
+}
+
+.post-image {
+  display: block;
+  max-width: 100%;
+  margin: 28px auto;
+}
+
+.post-image-caption {
+  text-align: center;
+  font-size: 0.8em;
+  color: #777;
+  margin-top: -16px;
+  margin-bottom: 24px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.gallery-grid img:hover {
+  opacity: 1;
+}
+
+/* Projects / resume specific */
+.resume-section {
+  margin-bottom: 2.5rem;
+}
+
+.resume-entry {
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #444;
+}
+
+.resume-entry:first-of-type {
+  border-top: 1px solid #444;
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.15rem;
+}
+
+.entry-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #f0f0f0;
+}
+
+.entry-header h3 a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid #555;
+}
+
+.entry-header h3 a:hover {
+  border-bottom-color: #e8e8e8;
+}
+
+.entry-date {
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  color: #777;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.entry-subtitle {
+  font-style: italic;
+  color: #999;
+  font-size: 0.9em;
+  margin: 0 0 0.5rem;
+}
+
+.entry-desc {
+  font-size: 0.9em;
+  color: #ccc;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.entry-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+}
+
+.entry-tags .tag {
+  font-size: 0.7em;
+  letter-spacing: 0.05em;
+  border: 1px solid #444;
+  padding: 0.15em 0.6em;
+  border-radius: 2px;
+  color: #777;
+  text-decoration: none;
+}
+
+.entry-tags .tag:hover {
+  background: #e8e8e8;
+  color: #1a1a1a;
+  border-color: #e8e8e8;
+}
