@@ -153,8 +153,10 @@ blockquote {
 }
 
 .gallery-grid {
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
+  margin-top: 16px;
 }
 
 
@@ -254,18 +256,4 @@ blockquote {
   background: #e8e8e8;
   color: #1a1a1a;
   border-color: #e8e8e8;
-}
-
-@media (max-width: 480px) {
-  body {
-    padding: 20px 8px 40px;
-  }
-  
-  .page {
-    padding: 16px 12px 40px;
-  }
-  
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
