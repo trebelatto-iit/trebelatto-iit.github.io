@@ -10,8 +10,8 @@ body {
 
 .page {
   background: #2d2d2d;
-  width: 38%;
-  min-width: 340px;
+  width: 100%;
+  max-width: 600px;
   margin: 0 auto;
   padding: 32px 48px 48px;
 }
@@ -153,11 +153,10 @@ blockquote {
 }
 
 .gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 10px;
-  margin-top: 16px;
 }
+
 
 .gallery-grid img {
   width: 100%;
@@ -255,4 +254,18 @@ blockquote {
   background: #e8e8e8;
   color: #1a1a1a;
   border-color: #e8e8e8;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 20px 8px 40px;
+  }
+  
+  .page {
+    padding: 16px 12px 40px;
+  }
+  
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
