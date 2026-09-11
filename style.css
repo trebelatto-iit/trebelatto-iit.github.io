@@ -4,7 +4,7 @@ body {
   padding: 40px 16px 60px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 16px;
-  color: #e8e8e8;
+  color: #000000;
   cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='24' viewBox='0 0 16 24'%3E%3Cpath d='M0 0 L0 16 L4 11 L7 18 L9 17 L6 10 L11 10 Z' fill='%23cc2222'/%3E%3C/svg%3E") 0 0, auto;
 }
 
