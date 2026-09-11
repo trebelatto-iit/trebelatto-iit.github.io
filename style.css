@@ -25,7 +25,7 @@ a:visited {
 }
 
 h1, h2, h3 {
-  color: #f0f0f0;
+  color: #000000;
 }
 
 .subtitle, .byline, footer p {
@@ -63,7 +63,7 @@ hr {
 }
 
 .info-box {
-  background: #252525;
+  background: #4a6142;
   border-left: 3px solid #555;
   padding: 16px 20px;
   margin: 24px 0;
