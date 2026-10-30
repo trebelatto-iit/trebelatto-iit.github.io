@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Style Showcase</title>
+  <style>
+body {
+  background-color: #1d3a14;
+  margin: 0;
+  padding: 40px 16px 60px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #d9d9d9;
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='24' viewBox='0 0 16 24'%3E%3Cpath d='M0 0 L0 16 L4 11 L7 18 L9 17 L6 10 L11 10 Z' fill='%23cc2222'/%3E%3C/svg%3E") 0 0, auto;
+}
+
+.page {
+  background: #1d3a14;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 32px 48px 48px;
+}
+
+a {
+  color: #d9d9d9;
+}
+
+a:visited {
+  color: #d9d9d9;
+}
+
+h1, h2, h3 {
+  color: #d9d9d9;
+}
+
+.subtitle, .byline, footer p {
+  color: #d9d9d9;
+}
+
+.byline {
+  font-size: 0.9em;
+}
+
+footer p {
+  font-size: 0.85em;
+  font-style: italic;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #444;
+  margin: 24px 0;
+}
+
+.home-header {
+  text-align: center;
+  padding-top: 16px;
+}
+
+.home-header h1 {
+  font-size: 2em;
+  margin-bottom: 8px;
+}
+
+.home-header .subtitle {
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+.info-box {
+  background: #4a6142;
+  border-left: 3px solid #555;
+  padding: 16px 20px;
+  margin: 24px 0;
+  color: #d9d9d9;
+  font-size: 0.95em;
+  line-height: 1.6;
+}
+
+.section-label {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: #d9d9d9;
+  margin-bottom: 8px;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  padding-bottom: 16px;
+}
+
+.earth-link {
+  flex-shrink: 0;
+}
+
+.earth-link img {
+  width: 44px;
+  height: 44px;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+  display: block;
+}
+
+.earth-link img:hover {
+  opacity: 1;
+}
+
+.topbar-nav {
+  display: flex;
+  gap: 18px;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.page {
+  position: relative;
+}
+
+.topbar-nav a {
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #d9d9d9;
+  text-decoration: none;
+}
+
+.topbar-nav a:hover {
+  color: #d9d9d9;
+}
+
+blockquote {
+  border-left: 3px solid #555;
+  margin: 24px 0 24px 0;
+  padding: 4px 20px;
+  color: #d9d9d9;
+  font-style: italic;
+}
+
+.post-image {
+  display: block;
+  max-width: 100%;
+  margin: 28px auto;
+}
+
+.post-image-caption {
+  text-align: center;
+  font-size: 0.8em;
+  color: #d9d9d9;
+  margin-top: -16px;
+  margin-bottom: 24px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.gallery-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  opacity: 0.9;
+  transition: opacity 0.2s;
+}
+
+.gallery-grid img:hover {
+  opacity: 1;
+}
+
+.resume-section {
+  margin-bottom: 2.5rem;
+}
+
+.resume-entry {
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #444;
+}
+
+.resume-entry:first-of-type {
+  border-top: 1px solid #444;
+}
+
+.entry-header {
+  display: flex;
+  font-weight: bold;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.15rem;
+}
+
+.entry-header h3 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #d9d9d9;
+}
+
+.entry-header h3 a {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid #555;
+}
+
+.entry-header h3 a:hover {
+  border-bottom-color: #d9d9d9;
+}
+
+.entry-date {
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  color: #d9d9d9;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.entry-subtitle {
+  font-style: italic;
+  color: #d9d9d9;
+  font-size: 0.9em;
+  margin: 0.75rem 0 0;
+}
+
+.entry-desc {
+  font-size: 0.9em;
+  color: #d9d9d9;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.entry-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.6rem;
+}
+
+.entry-tags .tag {
+  font-size: 0.7em;
+  letter-spacing: 0.05em;
+  border: 1px solid #444;
+  padding: 0.15em 0.6em;
+  border-radius: 2px;
+  color: #d9d9d9;
+  text-decoration: none;
+}
+
+.entry-tags .tag:hover {
+  background: #e8e8e8;
+  color: #1d3a14;
+  border-color: #e8e8e8;
+}
+
+/* Showcase-only layout */
+.group {
+  margin-bottom: 48px;
+}
+
+.group > .section-label {
+  border-bottom: 1px solid #444;
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+
+.demo-note {
+  font-size: 0.75em;
+  color: #9fb095;
+  margin: 4px 0 12px;
+  font-family: monospace;
+}
+
+.swatches {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.swatch {
+  border: 1px solid #444;
+  padding: 10px;
+  font-size: 0.75em;
+  font-family: monospace;
+}
+
+.swatch-chip {
+  height: 40px;
+  border: 1px solid #444;
+  margin-bottom: 8px;
+}
+
+.demo-row {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.demo-topbar {
+  position: relative;
+  height: 52px;
+  border: 1px dashed #444;
+  padding: 0;
+  margin-bottom: 12px;
+}
+
+.demo-topbar .topbar {
+  height: 100%;
+  padding: 0 0 0 0;
+  box-sizing: border-box;
+}
+  </style>
+</head>
+<body>
+
+  <div class="page">
+
+    <header>
+      <h1>STYLE SHOWCASE</h1>
+      <p class="subtitle">Every selector in style.css, rendered</p>
+    </header>
+
+    <hr>
+
+    <div class="group">
+      <p class="section-label">Base: body, page, links, rules</p>
+      <p class="demo-note">body, .page, a, a:visited, hr</p>
+      <p>Body text in the default color. <a href="#">Link (a)</a> and <a href="#">visited link (a:visited)</a> share the same color.</p>
+      <p class="demo-note">a:hover has no rule, so no visible hover state</p>
+      <hr>
+      <p class="demo-note">hr: 1px #444 border, 24px margin</p>
+    </div>
+
+    <div class="group">
+      <p class="section-label">Headings and text</p>
+      <p class="demo-note">h1, h2, h3</p>
+      <h1>Heading one</h1>
+      <h2>Heading two</h2>
+      <h3>Heading three</h3>
+      <p class="demo-note">.subtitle, .byline, footer p</p>
+      <p class="subtitle">Subtitle text</p>
+      <p class="byline">Byline text, 0.9em</p>
+      <p class="demo-note">.section-label</p>
+      <p class="section-label">Section label, uppercase</p>
+      <p class="demo-note">.info-box</p>
+      <div class="info-box">Info box with left border and #4a6142 background. Multi-line text at 0.95em with 1.6 line height.</div>
+      <p class="demo-note">blockquote</p>
+      <blockquote>Blockquote with a left border and italic text.</blockquote>
+    </div>
+
+    <div class="group">
+      <p class="section-label">Home header</p>
+      <p class="demo-note">.home-header, .home-header h1, .home-header .subtitle</p>
+      <div class="home-header">
+        <h1>Centered Name</h1>
+        <p class="subtitle">Centered italic subtitle</p>
+      </div>
+    </div>
+
+    <div class="group">
+      <p class="section-label">Topbar and navigation</p>
+      <p class="demo-note">.topbar, .earth-link, .earth-link img, .topbar-nav, .topbar-nav a</p>
+      <div class="demo-topbar">
+        <div class="topbar">
+          <a href="#" class="earth-link"><img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 44 44'%3E%3Ccircle cx='22' cy='22' r='20' fill='%234a7a3a'/%3E%3Cpath d='M12 16 Q20 10 26 18 T34 26 Q26 34 18 30 Q10 26 12 16Z' fill='%23d9d9d9' opacity='0.6'/%3E%3C/svg%3E" alt="Home" /></a>
+          <ul class="topbar-nav">
+            <li><a href="#">me</a></li>
+            <li><a href="#">journal</a></li>
+            <li><a href="#">projects</a></li>
+            <li><a href="#">board</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="demo-note">.earth-link img:hover and .topbar-nav a:hover have hover rules; the earth image opacity changes on hover</p>
+    </div>
+
+    <div class="group">
+      <p class="section-label">Blog post elements</p>
+      <p class="demo-note">.post-image, .post-image-caption</p>
+      <img class="post-image" alt="Sample post image" width="400" height="260" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 260'%3E%3Crect width='400' height='260' fill='%234a6142'/%3E%3Ccircle cx='120' cy='110' r='44' fill='%23d9d9d9' opacity='0.5'/%3E%3Crect x='200' y='140' width='150' height='70' fill='%23556b4b'/%3E%3C/svg%3E">
+      <p class="post-image-caption">Caption for the post image</p>
+      <p class="demo-note">.gallery-grid, .gallery-grid img (hover changes opacity)</p>
+      <div class="gallery-grid">
+        <img alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Crect width='10' height='10' fill='%234a6142'/%3E%3C/svg%3E">
+        <img alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Crect width='10' height='10' fill='%23556b4b'/%3E%3C/svg%3E">
+        <img alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Crect width='10' height='10' fill='%23325a2a'/%3E%3C/svg%3E">
+        <img alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Crect width='10' height='10' fill='%236a8a5e'/%3E%3C/svg%3E">
+        <img alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Crect width='10' height='10' fill='%23889f7a'/%3E%3C/svg%3E">
+        <img alt="" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 10'%3E%3Crect width='10' height='10' fill='%23a3b895'/%3E%3C/svg%3E">
+      </div>
+    </div>
+
+    <div class="group">
+      <p class="section-label">Resume and projects</p>
+      <p class="demo-note">.resume-section, .resume-entry, .resume-entry:first-of-type</p>
+      <div class="resume-section">
+        <div class="resume-entry">
+          <div class="entry-header">
+            <h3><a href="#">Project Title</a></h3>
+            <span class="entry-date">2024 – 2026</span>
+          </div>
+          <p class="entry-subtitle">Entry subtitle (.entry-subtitle)</p>
+          <p class="entry-desc">Entry description (.entry-desc). Body copy at 0.9em with 1.6 line height.</p>
+          <div class="entry-tags">
+            <a href="#" class="tag">tag one</a>
+            <a href="#" class="tag">tag two</a>
+            <a href="#" class="tag">tag three</a>
+          </div>
+        </div>
+        <div class="resume-entry">
+          <div class="entry-header">
+            <h3>Entry without a link</h3>
+            <span class="entry-date">2022</span>
+          </div>
+          <p class="entry-desc">A second entry, with no subtitle or tags.</p>
+        </div>
+      </div>
+      <p class="demo-note">.entry-header h3 a:hover and .entry-tags .tag:hover invert colors on hover</p>
+    </div>
+
+    <footer>
+      <hr>
+      <p>2005</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
