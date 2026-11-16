@@ -1,3 +1,11 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
 body {
   background-color: #1d3a14;
   margin: 0;
@@ -22,6 +30,10 @@ a {
 
 a:visited {
   color: #d9d9d9;
+}
+
+.em {
+  font-style: italic;
 }
 
 h1, h2, h3 {
@@ -82,8 +94,10 @@ hr {
 }
 
 .topbar {
-  display: flex;
+  display: grid;
+  grid-template-columns: 44px 1fr 44px;
   align-items: center;
+  column-gap: 12px;
   padding-bottom: 16px;
 }
 
@@ -106,17 +120,13 @@ hr {
 .topbar-nav {
   display: flex;
   font-weight: bold;
-  gap: 18px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 6px 18px;
   list-style: none;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.page {
-  position: relative;
+  min-width: 0;
 }
 
 .topbar-nav a {
@@ -260,4 +270,28 @@ blockquote {
   background: #e8e8e8;
   color: #1d3a14;
   border-color: #e8e8e8;
+}
+
+/* Small screens */
+@media (max-width: 520px) {
+  body {
+    padding: 16px 12px 40px;
+  }
+
+  .page {
+    padding: 16px 8px 32px;
+  }
+
+  .topbar-nav {
+    gap: 4px 12px;
+  }
+
+  .topbar-nav a {
+    font-size: 0.78em;
+    letter-spacing: 0.04em;
+  }
+
+  .gallery-grid {
+    gap: 6px;
+  }
 }
